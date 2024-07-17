@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Home</title>
+    {% endblock %}
+    <style>
+        form{background-color:yellow;}
+    </style>
+</head>
+<body>
+{% block content %}
+<div class="box">
+        <form>
+        <input type="text" placeholder="Enter Your Choice" name="fd_name">
+        <input type="number" placeholder="Enter Quantity" name="quantity">
+        <input type="submit" class="btn-btn-success">
+        <input type="reset" class="btn-btn-danger">
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>
